@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+   
+       <div class="container__left">
+           
+             <img src="./assets/Logo.png" alt="Logo Alura" class="container__left__logo">
+           
+             
+            <div class="container__left__input">
+                
+                  <textarea   onkeydown="filterInput(event)" oninput="validateInput(event)" placeholder="Ingrese el texto aqui"  id="textareaED" class="textare__encriptar"></textarea>
+                   
+                 
+            </div>
+                
+                <div class="container__left__botones">
+                    <p class="container__left_indicacion"><img src="./assets/icono_exclamacion.png" alt="Icono icono_exclamacion" class="container__left__iconoAdvertencia">Solo letras minusculas y sin acentos</p>    
+                     <button onclick="encriptarTexto()" class="button button__encriptar" id="button__encriptar">Encriptar!</button>
+                     <button onclick="desencriptarTexto()" class="button" id="button__desencriptar">Desencriptar!</button>
+
+                </div>
+                
+
+            </div>
+                        
+    
+
+        <div class="container_right">
+            <p class="container_right__parrafoDescriptado" id="container_right__parrafoDescriptado">
+            <img src="./assets/muneco.png" alt="Foto Buscar" class="container__right__fotoBuscar">
+            </p>
+            <p class="container_right__mensaje__error" id="mensajeTitulo">Ningun Mensaje Fue Encontrado</p>
+            <p class="container_right__mensaje__resultado" id="mensajeResultado">Ingrese un texto para Encriptar o Desencriptar</p>
+            <button onclick="copiarPortapapel()" class="button button__copiar" id="button__copiar">Copiar</button>
+
+        </div>
+    
+        
+
+    </div>
+    
+    <footer class="footer">
+        <p>Desarrollado por Cigos Emmanuel</p>
+    </footer>
+    
+    
+</body>
+
+    <script src="app.js" defer></script>
+</html>
